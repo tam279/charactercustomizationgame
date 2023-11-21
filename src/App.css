@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container for the entire application */
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgba(255, 166, 0, 0.4);
+}
+
+/* Styling for the controls (e.g., the Randomize button) */
+.controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+/* Styling for individual part tables */
+.part-table {
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.part-table h2 {
+    margin-bottom: 10px;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.cell {
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.img-center {
+    display: block;
+    margin: 0 auto;
+}
+
+.selected {
+    border: 2px solid #4CAF50;
+}
+
+/* Styling for the Avatar component */
+.avatar {
+    width: fit-content;
+    max-width: 100%;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avatar img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add this style for the game title */
+.game-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .app {
+        padding: 10px;
+    }
+
+    .controls {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .avatar-container {
+        position: relative;
+    }
+}
